@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 50px;
+    height: 60px;
+}
+.toggle{
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    display: none;
+  top: 20px;
+  right: 20px;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.nav-list{
+ 
+    color: white;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+}
+.nav-list li{
+    cursor: pointer;
+}
+#main{
+    background-image: url('https://img.freepik.com/free-vector/elegant-gradient-background_1340-3948.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1721779200&semt=ais_user');
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    max-width: 1200px;
+    margin:auto; 
+    padding: 16px;
+   
+}
+.btn{
+    color: white;
+ padding: 12px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.article{
+    color: white;
+ margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.article p{
+
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+.article button{
+    background-color: bisque;
+    padding: 12px 20px;
+    color: rgb(199, 99, 116);
+    border: none;
+    border-radius: 10px;
+}
+.intro-main{
+    font-size: 110px;
+    margin-top: 20px;
+}
+.secondary-main{
+    font-size: 50px;
+}
+
+@media screen and (max-width:520px) {
+    .toggle{
+        display: block;
+    }
+    .nav-list{
+        
+        flex-direction: column;
+        background-color: gray;
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+        display: none;
+        
+    }
+    .nav-list.active{
+        display:flex;
+    }
+   .nav-list li:not(:last-child){
+    width: 100%;
+text-align: left;
+    text-align: left;
+    padding: 10px 30px;
+    border-bottom: 1px solid white;
+   }
+    
+}
+@media screen and (max-width:598px) {
+
+    .intro-main{
+        font-size: 80px;
+        margin-top: 10px;
+    }
+    .secondary-main{
+        font-size: 50px;
+    }
+    
+}
+@media screen and (max-width:444px) {
+
+    .intro-main{
+        font-size: 50px;
+        margin-top: 10px;
+    }
+   
+    
+}
+.sectionTitle{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.service img{
+width: 300px;
+height: 300px;
+border-radius: 10px;
+transition: transform 0.3s ease;
+}
+.service img:hover{
+transform: scale(1.05);
+}
+.services{
+    display: flex;
+    gap:100px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.service{
+    max-width: 300px;
+}
+@media screen and (max-width:983px) {
+
+    /* .services{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    } */
+   .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+   }
+    
+}
+#servece{
+    margin: 80px auto;
+
+}
+.profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.comma{
+    width: 20px;
+    height: 20px;
+    rotate: 180deg; 
+}
+.div_profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+    text-align:center ;
+    color: white;
+}
+.div_profile h4{
+    width: 60%;
+}
+#yarp{
+    background-color: pink;
+    margin-bottom: 40px;
+    padding: 10px 0;
+}
+@media screen and (max-width:678px) {
+
+    .div_profile h4{
+        width: 100%;
+    }
+  
+}
+.about{
+    display: flex;
+   justify-content: space-between;
+  
+}
+.details{
+    width: 500px;
+}
+.details h1{
+    margin-bottom: 25px;
+}
+.details p{
+    margin-bottom: 25px;
+    color: gray;
+}
+.details button{
+  color: white;
+  padding:12px 20px;
+  background-color: pink;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+.details span{
+    color:palevioletred;
+}
+.about img{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+@media screen and (max-width:822px) {
+
+    .about{
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+      
+    }
+    /* .about img{
+        width: 500px;
+        height: 350px;
+       
+    } */
+    .details{
+        width: 370px;
+    }
+}
+#about{
+    
+}
+#last{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/024/059/940/small_2x/adorable-little-elephant-watching-a-movie-or-surfing-the-web-on-a-tablet-ai-generated-free-photo.jpg');
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+
+  
+}
+.last{
+    color: white;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 20px;
+}
+.last h1{
+    font-size: 40px;
+}
+.last p{
+    width: 50%;
+}
+.last button{
+    background-color: rgb(211, 211, 177);
+    padding: 12px 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border:none;
+}
+@media screen and (max-width:822px) {
+    .last p{
+        width: 100%;
+    }
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    gap: 10px;
+    color: palevioletred;
+
+}
+@media screen and (max-width:563px) {
+    .footer{
+       flex-direction: column;
+       row-gap: 10px;
+    }
+    .footer .logo{
+        /* align-self: center; */
+        order: -1;
+    }
+}
